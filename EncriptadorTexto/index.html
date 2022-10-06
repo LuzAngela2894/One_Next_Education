@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/archivo-encriptado.png" />
+    <title>Encriptador de Texto</title>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <img src="/archivo-encriptado.png" width="100" height="100" />
+        <h1>Encriptador de Texto</h1>
+        <img src="/archivo-encriptado.png" width="100" height="100" />
+      </div>
+    </header>
+    <div class="container">
+      <section id="encrypted">
+        <div class="text-box-encrypted">
+          <textarea
+            placeholder="Texto que va a ser encriptado"
+            id="text-encrypted"
+            required
+            cols="50"
+            rows="2"
+            maxlength="311"
+          ></textarea>
+          <button class="btn-submit" id="btn-encrypted" type="submit">
+            Encrypted
+          </button>
+        </div>
+      </section>
+      <section id="decrypted">
+        <div class="text-box-decrypted">
+          <textarea
+            placeholder="Texto que va a ser desencriptado"
+            id="text-decrypted"
+            required
+            cols="50"
+            rows="2"
+            maxlength="311"
+          ></textarea>
+          <button class="btn-submit" id="btn-decrypted" type="submit">
+            Decrypted
+          </button>
+        </div>
+      </section>
+      <section id="copy-section">
+        <div class="text-box">
+          <textarea
+            placeholder="Texto copiado"
+            id="result-text"
+            cols="50"
+            rows="2"
+            maxlength="311"
+            readonly
+          >
+          </textarea>
+          <button class="btn-submit" id="btn-copy" type="submit">Copy</button>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div>
+        <img src="/Signature-LAMC.png" width="400" height="200" />
+      </div>
+    </footer>
+    <script src="/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
